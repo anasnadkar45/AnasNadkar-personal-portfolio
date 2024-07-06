@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Amaranth, Lato, Urbanist, Titillium_Web } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./components/theme-provider";
+import DotPattern from "./components/magicui/dot-pattern";
+import { cn } from "@/lib/utils";
+import { Navbar } from "./components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
+const lato = Lato({ weight:"400", subsets: ["latin"] });
+const urbanist = Urbanist({ weight:"400", subsets: ["latin"] });
+const titillium_Web = Titillium_Web({ weight:"400", subsets: ["latin"] });
+export const amaranth = Amaranth({ weight:"400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +24,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={titillium_Web.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="min-h-[100vh] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative p-3">
+            {/* Radial gradient for the container to give a faded look */}
+            <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+            <div className="relative z-20">
+              <Navbar />
+              {children}
+            </div>
+          </div>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
