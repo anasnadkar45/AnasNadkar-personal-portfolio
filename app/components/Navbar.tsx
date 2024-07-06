@@ -1,6 +1,13 @@
 import { Logo } from "@/public/Logo";
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
 import { ModeToggle } from "./ModeToggle";
+import Link from "next/link";
+
+export const socialItems = [
+    { name: "Github", href: "https://github.com/anasnadkar45", icon: GithubIcon },
+    { name: "Twitter", href: "https://twitter.com/NadkarAnas45", icon: TwitterIcon },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/anas-nadkar-2765121a9/?originalSubdomain=in", icon: LinkedinIcon }
+];
 
 export function Navbar() {
     return (
@@ -10,13 +17,18 @@ export function Navbar() {
             <div>
                 <Logo />
             </div>
-            <div className="flex gap-3 items-center">
-                <ModeToggle />
+            {/* <div className="flex gap-3 items-center text-xl font-bold">
                 <p>Projects</p>
                 <p>About</p>
-                <GithubIcon />
-                <TwitterIcon />
-                <LinkedinIcon />
+            </div> */}
+            <div className="flex gap-3 items-center">
+                <ModeToggle />
+                <Link href={'https://github.com/anasnadkar45'}>
+                    <GithubIcon />
+                </Link>
+                <Link href={'https://twitter.com/NadkarAnas45'}>
+                    <TwitterIcon />
+                </Link>
             </div>
         </nav>
     )

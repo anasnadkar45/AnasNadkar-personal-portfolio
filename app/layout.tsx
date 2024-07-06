@@ -5,6 +5,7 @@ import { ThemeProvider } from "./components/theme-provider";
 import DotPattern from "./components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
 import { Navbar } from "./components/Navbar";
+import { SiteFooter } from "./components/SiteFooter";
 
 const inter = Inter({ subsets: ["latin"] });
 const lato = Lato({ weight:"400", subsets: ["latin"] });
@@ -37,6 +38,7 @@ export default function RootLayout({
             <div className="relative z-20">
               <Navbar />
               {children}
+              <SiteFooter />
             </div>
           </div>
         </ThemeProvider>

@@ -1,31 +1,32 @@
 import DevZenith from '../public/Devzenith.png';
+import DigiMarket from '../public/Digimarket.png';
 export const ProjectsData = [
     {
         "href": "https://dev-zenith-v2.vercel.app/",
         "name": "DevZenith",
         "description": "DevZenith is a collaborative platform where developers connect, share resources, and work on projects together.",
         "stack": "TS Nextjs Tailwind Supabase prisma postgres",
-        "date": "2024.4",
+        "date": "2024.6",
+        "code": "https://github.com/anasnadkar45/DevZenith-v2",
         "imgSrc": DevZenith,
         "vidType": "image/png"
     },
     {
-        "href": "https://kamous.noorai.io",
-        "name": "KamousAI",
-        "description": "AI tools for writing and learning languages.",
-        "stack": "TS Nextjs React Tailwind",
-        "date": "2024.1",
-        "code": "https://github.com/Ali-Hussein-dev/KamousAI",
-        "imgSrc": "/projects-videos/Kamousai-home.png",
-        "playstore": "https://play.google.com/store/apps/details?id=io.noorai.kamous.twa"
+        "href": "https://digi-market-gamma.vercel.app/",
+        "name": "DigiMarket",
+        "description": "DigiMarket stands out as the premier marketplace for all things related to tailwindcss, offering an unparalleled platform for both sellers and buyers alike.",
+        "stack": "TS Nextjs React Tailwind stripe stripeconnect",
+        "date": "2024.5",
+        "code": "https://github.com/anasnadkar45/digital-market-place",
+        "imgSrc": DigiMarket,
     },
     {
-        "href": "https://safwat-almaerifa.vercel.app",
-        "name": "Safwat Almaraefa",
-        "description": "+150 pages comes from headless CMS. The UX has been optimized for reading and searching.",
-        "stack": "Sanity TS Nextjs React Tailwind",
-        "date": "2023.11",
-        "code": "https://github.com/Ali-Hussein-dev/NoorAI",
+        "href": "/",
+        "name": "Upcomming Soon",
+        "description": " OpenSourceHub is a platform designed to connect open-source contributors with trending repositories. It facilitates collaboration, enables mentorship, and streamlines the contribution process.",
+        "date": "2024.7",
+        "stack": "TS Nextjs React Tailwind github openai",
+        "code": "https://github.com/anasnadkar45",
         "imgSrc": "/projects-videos/safwat-almaraefa.png"
     },
     // {
