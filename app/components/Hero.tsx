@@ -25,7 +25,7 @@ export function Hero() {
                         </div>
                     </BlurIn>
 
-                    <LettersPullUp className="text-sm md:text-lg" text="Obsessed with developer experience, robust, scalable
+                    <LettersPullUp className="text-sm md:text-lg" text="Obsessed with developer experience, scalable
                         and user-friendly applications." />
 
                     {/* <p className="text-center text-lg">Obsessed with developer experience, robust, scalable
