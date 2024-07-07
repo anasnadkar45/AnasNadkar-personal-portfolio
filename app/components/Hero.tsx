@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { amaranth } from "../layout";
 import { BlurIn } from "./Blur-in";
 import { LettersPullUp } from "./words-pull-up";
+import Link from "next/link";
 
 export function Hero() {
     return (
@@ -32,7 +33,9 @@ export function Hero() {
                     </p> */}
 
                     <div className="w-[150px] mx-auto">
-                        <EyeCatchingButton_v1 title="Resume" />
+                        <Link href={'https://drive.google.com/file/d/1gSrwBMdAERPH1NlZmTpcfY1eVI2BfwmW/view?usp=drive_link'}>
+                            <EyeCatchingButton_v1 title="Resume" />
+                        </Link>
                     </div>
                 </div>
             </div>
