@@ -33,7 +33,7 @@ export function Hero() {
                     </p> */}
 
                     <div className="w-[150px] mx-auto">
-                        <Link href={'https://drive.google.com/file/d/1gSrwBMdAERPH1NlZmTpcfY1eVI2BfwmW/view?usp=drive_link'}>
+                        <Link href={'https://drive.google.com/file/d/1TiTBvf9VNwNGw-B67VdemHDvdRyMWy24/view?usp=drive_link'}>
                             <EyeCatchingButton_v1 title="Resume" />
                         </Link>
                     </div>
